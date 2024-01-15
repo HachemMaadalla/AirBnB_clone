@@ -38,3 +38,10 @@ class HBNBCommand(cmd.Cmd):
 
 if __name__ == "__main__":
     HBNBCommand().cmdloop()
+
+class User(BaseModel):
+    """Represents a User in the HBnB project."""
+    email = ""
+    password = ""
+    first_name = ""
+    last_name = ""
